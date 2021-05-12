@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.main>article {
+  flex: 1;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+}
+
+.main>nav, .main>aside {
+  flex: 0 0 20vw;
+  background: #E4BCBC;
+}
+
+.main>nav {
+  order: -1;
+}
+
+header, footer {
+  background: linear-gradient(180deg, #E4BCBC -18.33%, rgba(11, 0, 0, 0) 81.67%);
+  height: 35vh;
+  margin: 0
+}
+
+header, footer, article, nav, aside {
+  padding: 1em;
+  text-align: center;
+}
+
+footer {
+  height: 25vh;
+  margin: 0;
+}
+
+a:hover {
+  font-size: xx-large;
+  color: #BB9B28;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header>img {
+  position: sticky;
+  margin-top: 150px;
+  border-radius: 250px;
+  width: 300px;
+  height: 300px;
+}
+
+.title {
+  position: absolute;
+  left: 51px;;
+}
+
+.title h1 {
+  font-size: 55px;
+  color: #771717;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title h3 {
+  font-weight: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: -18px;
+}
+
+.dadosPessoais{
+  border-radius: 50px;
+  box-shadow: 0px 0px 60px #771717;
+  margin-top: 50px;
+  text-align: center;
+}
+.dadosPessoais h3 {
+  font-weight: normal;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+article a {
+  text-decoration: none;
+}
+
+article a:hover,
+#contato a:hover{
+  font-size: x-large;
+}
+
+.home {
+  height: 70px;
+  left: 72px;
+  text-align: center;
+  align-items: center;
+  background: #601717;
+}
+
+.link-home {
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.primeiroConteudo p:first-letter {
+  font-size: 30px;
+  color: darkgreen;
+  font-weight: bold;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.terceiroConteudo p:first-letter {
+  font-size: 30px;
+  color: darkgreen;
+  font-weight: bold;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.encontre p:first-letter {
+  font-size: 30px;
+  color: darkgreen;
+  font-weight: bold;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+address {
+  display: flex;
+  justify-content: flex-end;
+}

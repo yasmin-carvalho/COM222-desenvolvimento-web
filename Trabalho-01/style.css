@@ -1,0 +1,252 @@
+body {
+  position: relative;
+  height: 1839px;
+  background: linear-gradient(180deg, #FFF8F2 0%, rgba(135, 79, 71, 0) 100%);
+}
+
+.foto1 {
+  position: absolute;
+  width: 436px;
+  height: 408px;
+  left: 90px;
+  top: 221px;
+  border-radius: 245.5px;
+}
+
+.title {
+  position: absolute;
+  left: 51px;
+  top: 37px;
+}
+
+.title h1 {
+  position: absolute;
+  width: 368px;
+  left: 73px;
+  top: 18px;
+  font-size: 55px;
+  text-align: center;
+  color: #771717;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title h2 {
+  position: absolute;
+  width: 226px;
+  left: 144px;
+  top: 102px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+.home {
+  position: absolute;
+  width: 1192px;
+  height: 70px;
+  left: 72px;
+  top: 670px;
+  text-align: center;
+  background: #601717;
+}
+
+.home p {
+  position: absolute;
+  width: 147px;
+  left: 518px;
+  top: 10px;
+}
+
+.link-home {
+  font-size: 25px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.dadosPessoais {
+  position: absolute;
+  width: 684px;
+  height: 427px;
+  left: 567px;
+  top: 184px;
+}
+
+.dadosPessoais h2 {
+  position: absolute;
+  width: 221px;
+  height: 82px;
+  left: 313px;
+  top: 80px;
+  font-weight: lighter;
+  font-size: 27px;
+}
+
+.dadosPessoais ul {
+  position: absolute;
+  width: 596px;
+  left: 58px;
+  top: 170px;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.conteudos {
+  position: absolute;
+  width: 1192px;
+  height: 934px;
+  left: 72px;
+  top: 766px;
+}
+
+.primeiroConteudo {
+  position: absolute;
+  width: 518px;
+  height: 347px;
+  left: 57px;
+  top: 74px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 0px 0px 60px #771717;
+  border-radius: 50px;
+}
+
+.primeiroConteudo h2 {
+  position: absolute;
+  width: 338px;
+  left: 90px;
+  top: 15px;
+  font-size: 27px;
+  line-height: 41px;
+  text-align: center;
+}
+
+.primeiroConteudo p {
+  position: absolute;
+  width: 478px;
+  left: 18px;
+  top: 90px;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+}
+
+.segundoConteudo {
+  position: absolute;
+  width: 518px;
+  height: 347px;
+  left: 612px;
+  top: 74px;
+  text-align: center;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50px;
+  position: absolute;
+  box-shadow: 0px 0px 60px #771717;
+  border-radius: 50px;
+}
+
+.segundoConteudo h2 {
+  position: absolute;
+  left: 90px;
+  top: 15px;
+  font-size: 27px;
+  line-height: 41px;
+}
+
+.segundoConteudo ul {
+  position: absolute;
+  width: 477px;
+  font-size: 24px;
+  line-height: 33px;
+  top: 85px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.terceiroConteudo {
+  position: absolute;
+  width: 1127px;
+  left: 38px;
+  top: 455px;
+}
+
+.terceiroConteudo h2 {
+  position: absolute;
+  left: 506px;
+  top: 10px;
+  font-size: 28px;
+}
+
+.terceiroConteudo p {
+  position: absolute;
+  left: 0px;
+  top: 55px;
+  font-size: 25px;
+  line-height: 41px;
+  text-align: center;
+}
+
+.terceiroConteudo ul {
+  position: absolute;
+  left: 6px;
+  top: 250px;
+  line-height: 33px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.foto5 {
+  position: absolute;
+  width: 192px;
+  height: 268px;
+  left: 245px;
+  top: 237px;
+}
+
+.foto2 {
+  position: absolute;
+  width: 172px;
+  height: 320px;
+  left: 595px;
+  top: 235px;
+  transform: matrix(-0.01, 1, -1, -0.01, 0, 0);
+}
+
+.foto4 {
+  position: absolute;
+  width: 130px;
+  height: 248px;
+  left: 915px;
+  top: 237px;
+}
+
+.item5 {
+  text-align: center;
+  position: absolute;
+  width: 1192px;
+  height: 99px;
+  left: 72px;
+  top: 1800px;
+  background: linear-gradient(180deg, #E4BCBC -18.33%, rgba(11, 0, 0, 0) 81.67%);
+}
+
+.item5 a {
+  margin: 0 25px 0 25px;
+}
+
+.item5 address {
+  margin-top: 10px;
+}
+
+a:hover {
+  font-size: xx-large;
+  color: #BB9B28;
+}

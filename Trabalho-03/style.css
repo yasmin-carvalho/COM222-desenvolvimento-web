@@ -1,0 +1,30 @@
+.media {
+    display: flex;
+    align-items: flex-start;
+    background: #c586a9;
+    margin: 5em;
+    padding: 1em;
+    max-width: 80em;
+}
+
+.media-object {
+    margin-right: 1em;
+}
+
+.media-text {
+    flex: 1;
+    padding: 0 2em 0 2em;
+}
+
+.media-heading {
+    margin: 0 0 .5em;
+}
+
+img {
+    width: 30vw;
+    height: 35vh;
+}
+
+p {
+    text-align: justify;
+}
