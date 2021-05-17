@@ -1,0 +1,41 @@
+<html>
+<!–- js06.html -->
+<head>
+  <meta charset="utf-8">
+  <title>Testa nro primo</title>
+  <script type="text/javascript">
+    function isPrime(n)
+// Assume: n > 0  e n é inteiro
+// Retorna: true se n é primo
+{
+  if (n < 2) {
+    return false;
+  }
+  else if (n == 2) {
+    return true;
+  }
+  else {
+      for (var i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i == 0) {
+          return false;
+        }
+      }
+      return true;
+  }
+} 
+
+  </script>
+</head>
+<body>  <p>
+ <script type="text/javascript">
+   testNum = parseFloat(prompt("Digite um inteiro positivo", "7"));
+    
+   if (isPrime(testNum)) {
+      document.write(testNum + " <b>é</b> primo.");
+   }
+   else {
+      document.write(testNum + " <b>nao é</b> primo.");
+   }
+  </script>  </p>  
+</body>
+</html>

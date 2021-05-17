@@ -1,0 +1,24 @@
+<html> <!–- js11.html -->
+<head>
+  <meta charset="utf-8">
+  <title>Time page</title>
+</head>
+<body>
+  Hora quando a página foi carregada:
+  <script type="text/javascript">
+    now = new Date();
+    document.write("<p>" + now + "</p>");
+    time = "AM";
+    hours = now.getHours();
+    if (hours > 12) {
+        hours -= 12;
+        time = "PM"
+    }
+    else if (hours == 0) {
+        hours = 12;
+    }
+    document.write("<p>" + hours + ":" + now.getMinutes() + 
+	     ":" + now.getSeconds() + " " + time + "</p>");
+  </script>
+</body>
+</html>

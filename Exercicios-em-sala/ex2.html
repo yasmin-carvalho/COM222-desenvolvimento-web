@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time page</title>
+    <script type="text/javascript">
+        function conta_subsrt(str, substr)
+        {
+            var cont = 0;
+            var pos = 0;
+
+            while(true)
+            {
+                pos = str.indexOf(substr, pos)
+                if(pos >= 0)
+                {
+                    cont++;
+                    pos++;
+                }
+                else{
+                    break;
+                }
+            }
+            return cont;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var str = prompt("Informe a string", "");
+        var str = prompt("Informe a substring", "");
+        var quant = conta_subsrt(str, substr);
+        document.write("A substring " + substr + " aparece " + quant + "vezes na string");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<!–- js12.html -->
+<head>
+  <meta charset="utf-8">
+  <title>Time page</title>
+</head>
+<body>
+  <p>Tempo decorrido este ano:
+  <script type="text/javascript">
+    now = new Date();
+    newYear = new Date(2020,0,1);
+    secs = Math.round((now-newYear)/1000);
+    days = Math.floor(secs / 86400);
+    secs -= days*86400;
+    hours = Math.floor(secs / 3600);
+    secs -= hours*3600;
+    minutes = Math.floor(secs / 60);
+    secs -= minutes*60;
+    document.write(days + " dias, " + hours + " horas, " +
+         minutes + " minutos, e " + secs + " segundos.");
+  </script>
+  </p>
+</body>
+</html>

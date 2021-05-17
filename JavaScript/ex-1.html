@@ -1,0 +1,22 @@
+<html>
+<!–- js03.html -->
+<head>
+  <meta charset="utf-8">
+  <title>Dobrando papel</title>
+</head>
+
+<body>
+ <script type="text/javascript">
+    var distanceToSun = 93.3e6*5280*12;
+    var thickness = .002;
+
+    var foldCount = 0;    
+    while (thickness < distanceToSun) {
+        thickness *= 2;
+        foldCount++;
+    }
+    document.write("<p>Nro de dobras = " +
+                   foldCount+"</p>");
+  </script>
+</body>
+</html>

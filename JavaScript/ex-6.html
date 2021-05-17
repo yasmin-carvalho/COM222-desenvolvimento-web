@@ -1,0 +1,44 @@
+<html>
+<!–- js09.html -->
+<head>
+ <title>Testa palindrome</title>  
+  <script type="text/javascript">
+// Assume: str eh uma string
+// Retorna: str contendo apenas letras e sem espaços
+function strip(str) {
+var copy = "";
+  for (var i = 0; i < str.length; i++) {
+    if ((str.charAt(i) >= "A" && str.charAt(i) <= "Z") ||
+        (str.charAt(i) >= "a" && str.charAt(i) <= "z")) {
+      copy += str.charAt(i);
+    }
+  }
+  return copy;
+}
+// Assume: str eh uma string
+// Retorna: true se str for palíndrome
+function isPalindrome(str) {
+  str = strip(str.toUpperCase());
+  
+  for(var i = 0; i < Math.floor(str.length/2); i++) {
+    if (str.charAt(i) != str.charAt(str.length-i-1)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+  </script>
+</head>
+<body>  <p>
+  <script type="text/javascript">
+    text = prompt("Digite uma palavra ou frase", "Madam, I'm Adam");
+    if (isPalindrome(text)) {
+      document.write("'" + text + "' <b>eh</b> um palindrome.");
+    }
+    else {
+      document.write("'" + text + "' <b>nao eh</b> um palindrome.");
+    }
+  </script>  </p>
+</body>
+</html>

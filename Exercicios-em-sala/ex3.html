@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timePage</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr = new Array(5);
+        for(i=0; i < arr.length; i++){
+            var num = prompt("Informe um elemento inteiro: ");
+            arr[i] = parseInt(num);
+        }
+
+        var soma = arr[0];
+        for(i=1; i < arr.length; i++){
+            soma += arr[i];
+        }
+
+        var prod = arr[0];
+        for(i=1; i < arr.length; i++){
+            prod *= arr[i];
+        }
+
+        document.write("Valor da soma: " + soma + "<br>");
+        document.write("Valor do produto: " + prod + "<br>");
+
+    </script>
+</body>
+</html>
