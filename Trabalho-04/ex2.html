@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h1>Exercício 2</h1>
+    <p>
+        Escreva um script que leia a data e a hora de seu nascimento e informe a sua idade em anos,
+        dias, horas, minutos e segundos.
+    </p>
+    <section id="resultado">
+        <input type="button" value="gerar" onclick="gerar()">
+    </section>
+    <script type="text/javascript">
+        function gerar() {
+            dataDeAgora = new Date()
+            dataNascimento = prompt('Informe a data de seu nascimento (DD/MM/AAAA): ')
+            horaNascimento = prompt('Informe a hora de seu nascimento: (HH:MM)')
+            
+            dia = dataNascimento.slice(0, 2)
+            mes = dataNascimento.slice(3, 5)
+            ano = dataNascimento.slice(6, 10)
+
+            dia = parseInt(dia)
+            mes = parseInt(mes) - 1
+            ano = parseInt(ano)
+
+            novoAno = new Date(ano, mes, dia)
+            secs = Math.round((dataDeAgora - novoAno) / 1000)
+
+            years = Math.floor(secs / 31536000)
+            secs -= years * 31536000
+            days = Math.floor(secs / 86400)
+            secs -= days * 86400
+            hours = Math.floor(secs / 3600)
+            secs -= hours * 3600
+            minutes = Math.floor(secs / 60)
+            secs -= minutes * 60
+
+            document.getElementById('resultado').innerHTML = `${years} anos ${days} dias ${hours} horas ${minutes} minutos ${secs} segundos`
+        }
+    </script>
+    
+</body>
+</html>

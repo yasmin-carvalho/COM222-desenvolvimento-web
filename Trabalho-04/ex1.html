@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    <p>
+        Escreva um script que leia uma string e informe a maior palavra contida na string.
+    </p>
+    <section>
+        <input type="button" value="gerar" onclick="gerar()">
+    </section>
+    <script type="text/javaScript">
+        function gerar() {
+            const str = prompt('Escreva uma frase: ')
+            let array = str.split(' ')
+            var maior = 0
+            var maiorPalavra = ''
+            for (let i=0; i<array.length; i++){
+                if (array[i].length > maior){
+                    maior = array[i].length
+                    maiorPalavra = array[i]
+                }
+            }
+            document.write(maiorPalavra)
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            margin: 30px 0 0 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 3</h1>
+    <p>
+        Elabore um script que leia dois números e imprima em uma tabela (gerada dinamicamente) o
+        resultado das operações aritméticas soma, produto, divisão e resto da divisão (%) entre esses
+        números.        
+    </p>
+    <section id="resultado">
+        <input type="button" value="gerar" onclick="gerar()">
+    </section>
+    <script type="text/javaScript">
+        function gerar() {
+            var num1 = prompt("Informe o primeiro número: ")
+            var num2 = prompt("Informe o segundo número: ")
+            num1 = parseFloat(num1)
+            num2 = parseFloat(num2)
+
+            soma = num1 + num2
+            multiplicacao = num1 * num2
+            if(num2 == 0 ){
+                divisao = "ERRO, impossível dividir por 0"
+                restoDivisao = "ERRO, não existe resto de 0"
+            }else{
+                divisao = num1 / num2
+                restoDivisao = num1 % num2 
+            }
+
+            document.getElementById("resultado").innerHTML = `<table>
+                <thead>
+                    <tr>
+                        <th>Operação</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>${num1} + ${num2}</th>
+                        <th>${soma}</th>
+                    </tr>
+                    <tr>
+                        <th>${num1} * ${num2}</th>
+                        <th>${multiplicacao}</th>
+                    </tr>
+                    <tr>
+                        <th>${num1} / ${num2}</th>
+                        <th>${divisao}</th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>${num1} % ${num2}</th>
+                        <th>${restoDivisao}</th>
+                    </tr>
+                </tfoot>
+            </table>`             
+        }
+    </script>
+    
+</body>
+</html>

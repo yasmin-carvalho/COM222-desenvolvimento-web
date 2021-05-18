@@ -1,0 +1,29 @@
+<html>
+ <!–- form03.html -->
+ <head>
+  <title>Manipulando botões</title>
+  <meta http-equiv="Content-Type" content="text/html; 
+   charset=utf-8">
+  <script type="text/javascript">
+      function Greeting()
+      {
+        var now = new Date();
+        if (now.getHours() < 12) {
+          alert("Bom dia");
+        } 
+        else if (now.getHours() < 18) {
+          alert("Boa tarde");
+        }
+        else {
+          alert("Boa noite");
+        }
+      }       
+  </script>
+ </head>
+ <body>
+  <form id="ButtonForm">
+   <p> <input type="button" value="Clique aqui"
+           onclick="Greeting();" />   </p>
+  </form>
+ </body>
+</html>

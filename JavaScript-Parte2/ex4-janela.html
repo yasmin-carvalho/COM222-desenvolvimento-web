@@ -1,0 +1,25 @@
+<html>
+ <!-– form04.html -->
+ 
+ <head>
+  <title> Manipulando janelas </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="text/javascript">
+    function Help()
+    // Resultado: Mostra uma mensagem de ajuda numa janela separada
+    {
+      var OutputWindow = window.open();
+      OutputWindow.document.open();
+
+      OutputWindow.document.write("Esta é uma janela de ajuda. "); 
+    }       
+  </script>
+ </head>
+
+ <body>
+  <form id="ButtonForm">
+    <p><input type="button" value="Click for Help" onclick="Help();"/>        
+    </p>
+  </form>
+ </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+ <!-– form06.html -->
+ 
+ <head>  <title> Manipulando caixas de texto </title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ <body>
+  <form id="BoxForm">
+    <p>  <label for="userName">Digite seu nome:</label> 
+    <input type="text"  id="userName" size="12" value="" />
+    <br /><br />
+    <input type="button" value="Click Me" 
+    onclick="alert('Obrigado, ' + document.forms['BoxForm'].userName.value + 
+                                ', eu precisava de um clique.');" />   </p>  </form>
+ </body>
+</html>

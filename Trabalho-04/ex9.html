@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <h1>Exercício 9</h1>
+    <p>
+        Leia valores numéricos e os coloque num array. A leitura termina quando o valor 0 for 
+        digitado. Em seguida, calcule a média dos valores digitados e informe o usuário.
+    </p>
+    <section>
+        <input type="button" value="gerar" onclick="gerar()">
+    </section>
+    <script>
+        function gerar() {
+            var num = prompt("Digite um número: ")
+            num = parseFloat(num)
+            var cont = 0
+            var soma = 0
+            while(num != 0){
+                cont++
+                soma = soma + num
+                num = prompt("Digite um número: ")
+                num = parseFloat(num) 
+            }
+            document.write('A média dos números digitados é de: '+(soma/cont))
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h1>Exercício 10</h1>
+    <p>
+        Leia o nome e a altura de 5 pessoas. Ao final informe o nome da mais alta e sua altura.
+    </p>
+    <section id="resultado"> 
+        <input type="button" value="gerar" onclick="gerar()">
+    </section>
+    <script type="text/javaScript">
+        function gerar() {
+           var maior = 0
+           for(let i = 1; i <= 5; i++){
+               nome = prompt("Digite seu nome: ")
+               altura = prompt("Digite sua altura: ")
+               altura = parseFloat(altura)
+               if(altura > maior){
+                   maior = altura
+                   pessoaMaisAlta = nome
+               }
+            }
+            document.getElementById("resultado").innerHTML = `${pessoaMaisAlta} é a pessoa mais alta, com a altura de ${maior} metros`
+        }
+    </script>
+    
+</body>
+</html>
