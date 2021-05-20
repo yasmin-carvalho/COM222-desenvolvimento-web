@@ -1,0 +1,31 @@
+<html>
+ <!-– form12.html -->
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title> Check Boxes </title>
+   <script type="text/javascript">
+     function processCB()
+       {  var boxes = document.forms['BoxForm'].cb.length;
+          var s="";
+          for (var i = 0; i < boxes; i++)
+              {  if (document.forms['BoxForm'].cb[i].checked)
+                    { s = s + document.forms['BoxForm'].cb[i].value + " "; }
+              }
+          if (s == "")  {  s = "nada";  }
+          alert("Você selecionou " + s);
+       }
+   </script>
+ </head>
+ <body>
+  <form id="BoxForm">
+    <p>Quais dessas coisas são insuportávies (selecione uma ou mais)?<br/><br/>
+      &nbsp; <input type="checkbox" name="cb" id="Corrupcao" value="Corrupcao" />
+                                    <label for=" Corrupcao ">Corrupção</label><br/>
+      &nbsp; <input type="checkbox" name="cb" id="Impostos" value="Impostos" />
+                                    <label for="Impostos">Impostos</label><br/>
+      &nbsp; <input type="checkbox" name="cb" id="Sertanejo" value="Sertanejo"/>
+                         <label for="Sertanejo">Sertanejo Sofrência</label><br/>
+      <br/> <input type="button" value="Done" onclick="processCB()"  />   </p>
+  </form>
+
+ </body>    </html>

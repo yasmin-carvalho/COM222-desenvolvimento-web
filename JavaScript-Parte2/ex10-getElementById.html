@@ -1,0 +1,31 @@
+<html>
+ <!– form11.html -->
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title> Fun with Text Boxes </title>
+  <script type="text/javascript" 
+      src="https://baldochi.unifei.edu.br/COM222/verify.js">
+  </script>
+  <script type="text/javascript">
+    function FahrToCelsius(tempInFahr)
+    {
+      return (5/9)*(tempInFahr - 32);
+    }
+  </script>
+ </head>
+
+ <body>
+  <form id="BoxForm">
+    <p><label for="Fahr">Temperatura em Fahrenheit:</label> 
+    <input type="text" id="Fahr" size="10" value="0"
+       onchange="if (VerifyNum(this)) {  
+     var F=document.getElementById('Fahr');  
+     var C=document.getElementById('Celsius'); 
+     C.value = FahrToCelsius(parseFloat(F.value));
+                 }" />
+    &nbsp; <tt>----></tt> &nbsp;
+    <input type="text" id="Celsius" size="10" value=""   
+             onfocus="getElementById('Fahr').focus();" />
+    em Celsius  </p>
+  </form> </body>
+</html>

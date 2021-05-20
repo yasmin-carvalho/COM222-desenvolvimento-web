@@ -1,0 +1,40 @@
+<html> <!-- form10.html -->
+ <head>  <title> Manipulando Text Areas </title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="text/javascript" src="https://baldochi.unifei.edu.br/COM222/verify.js"> 
+  </script> 
+  <script type="text/javascript">
+    function Table(menor, maior, pot)
+    {
+      var message = "i: i^" + pot + "\n-------\n";
+      for (var i = menor; i <= maior; i++) {
+        message = message + i + ": " + Math.pow(i, pot) + "\n"; 
+      }
+      document.forms['AreaForm'].Output.value = message;
+    }       
+  </script>
+ </head>
+ <body>
+  <form  id="AreaForm">
+    <div style="text-align: center;"> 
+      <p> Mostra nros de <input type="text" id="lowRange" size="4"     
+                value="1" onchange="VerifyInt(this);" /> 
+      até <input type="text" id="highRange" size="4" value="10" 
+                onchange="VerifyInt(this);" />
+      elevados a potência de <input type="text" id="power" size=3 value=2
+                                    onchange="VerifyInt(this);" />
+      <br /> <br />
+      <input type="button" value="Gerar tabela" 
+         onclick="
+                    var ini = document.getElementById('lowRange');
+                    var fim = document.getElementById('highRange');
+                    var pot = document.getElementById('power');
+                    Table(parseFloat(ini.value),
+                    parseFloat(fim.value),
+                    parseFloat(pot.value));" />
+      <br /> <br />
+      <textarea id="Output" rows="20" cols="15"></textarea>  </p>
+    </div>
+  </form>
+ </body>
+</html>
