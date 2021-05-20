@@ -2,10 +2,10 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title> Exercício Form </title>
+  <script src="myScript.js"></script>
  </head>  
     
     <body bgcolor="#c8d8f8">
-        <form id="registraUsuario">
             <center>
                 <table cellpadding=4 cellspacing=2 border=0>
 
@@ -17,18 +17,18 @@
                         <td valign=top> 
                             <b>Nome</b> 
                             <br>
-                            <input type="text" name="firstName" size=15></td>
+                            <input type="text" name="firstName" id="name" size=15></td>
                         <td  valign=top>
                             <b>Idade</b>
                             <br>
-                            <input type="text" name="lastName" size=15></td>
+                            <input type="text" name="lastName" id="ida" size=15 onchange="validarIdade(this)"></td>
                     </tr>
 
                     <tr>
                         <td valign=top colspan=2>
                             <b>E-Mail</b> 
                             <br>
-                            <input type="text" name="email" size=20>
+                            <input type="text" name="email" size=20 id="email" onchange="validarEmail(this)">
                             <br></td>
                     </tr>
 
@@ -36,12 +36,14 @@
                         <td  valign=top colspan=2>
                             <b>Em quais linguagens você programa?</b>
                             <br>
-                            <input type="checkbox" name="linguagens" value="Java">Java&nbsp;&nbsp; 
-                            <input type="checkbox" name="linguagens" value="C++">C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="checkbox" name="linguagens" value="C">C<br>
-                            <input type="checkbox" name="linguagens" value="Perl">Perl&nbsp;&nbsp;
-                            <input type="checkbox" name="linguagens" value="COBOL">COBOL
-                            <input type="checkbox" name="linguagens" value="VB">VB<br>
+                            <form id="boxForm" onchange="validarCheckbox()">
+                                <input type="checkbox" name="linguagens" value="Java">Java&nbsp;&nbsp; 
+                                <input type="checkbox" name="linguagens" value="C++">C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="linguagens" value="C">C<br>
+                                <input type="checkbox" name="linguagens" value="Perl">Perl&nbsp;&nbsp;
+                                <input type="checkbox" name="linguagens" value="COBOL">COBOL
+                                <input type="checkbox" name="linguagens" value="VB">VB<br>
+                            </form>
                         </td>
                     </tr>
 
@@ -57,12 +59,11 @@
 
                     <tr>
                         <td  align=center colspan=2>
-                            <input type="button" value="Submit"> 
+                            <input type="button" value="Submit" onclick="entrar()"> 
                         </td>
                     </tr>
 
                 </table>
             </center>
-        </form>
     </body>
 </html>
