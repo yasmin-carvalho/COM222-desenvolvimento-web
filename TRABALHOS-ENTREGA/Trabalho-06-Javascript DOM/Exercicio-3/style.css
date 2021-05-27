@@ -1,0 +1,30 @@
+div img {
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
+
+.img150 {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.img100{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.img50 {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+button { 
+    border: none;
+    background-color: white;
+}
+
+.titulo {
+    font-size: 40px;
+}
