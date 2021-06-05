@@ -18,12 +18,19 @@ $(document).ready(() => {
                 console.log(resultadoPesquisa)
                 $('#cidade').html(`${resultadoPesquisa.name}`)
                 $('#condicaoAtual').html(`${resultadoPesquisa.weather[0].description}`)
-                $('#tempAtual').html(parseFloat(`${resultadoPesquisa.main.temp - 273.15}`) + "°C")
-                $('#tempMax').html(parseFloat(`${resultadoPesquisa.main.temp_max - 273.15}`) + "°C")
-                $('#tempMin').html(parseFloat(`${resultadoPesquisa.main.temp_min - 273.15}`) + "°C")
+                $('#tempAtual').html(`${converteTemp(resultadoPesquisa.main.temp)}` + "°C")
+                $('#tempMax').html(`${converteTemp(resultadoPesquisa.main.temp_max)}` + "°C")
+                $('#tempMin').html(`${converteTemp(resultadoPesquisa.main.temp_min)}` + "°C")
             })
             .catch(error => {
-                alert('Erro na requisição!')
+                alert('Erro, cidade inválida!')
             })
     })
 })
+
+function converteTemp(kelvin) {
+    const celcius = kelvin - 273.15
+    return parseFloat(celcius.toFixed(2))
+}
+
+
