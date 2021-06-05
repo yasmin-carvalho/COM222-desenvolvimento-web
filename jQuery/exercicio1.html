@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#add-button").click(function () {
+                var value = $("#message").val();
+                $("#list").append("<li>" + value + "<a href='#'>X</a></li>");
+            });
+            $("ul").on("click", 'a', function(){
+                $(this).parent().remove();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text" id="message" />
+    <button id="add-button">Adicionar</button>
+    <ul id="list"></ul>
+</body>
+
+</html>

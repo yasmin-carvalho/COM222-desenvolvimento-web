@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho-08</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="t8_script.js"></script>
+</head> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="t8_script.js" defer></script>
+</head>
+<body>
+    <div id="root">
+        <div class="container text-center">
+            <h1 class="py-5 text-uppercase">Condições Meteorológicas</h1>
+            <form>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input id="encontrar" type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button id="buttonClick" class="btn btn-primary">Pesquisar</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Cidade</th>
+                          <th>Condição Atual</th>
+                          <th>Temperatura Atual</th>
+                          <th>Temperatura Máxima</th>
+                          <th>Temperatura Mínima</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Resultado da Pesquisa</td> 
+                          <td id="cidade"></td>
+                          <td id="condicaoAtual"></td>
+                          <td id="tempAtual"></td>
+                          <td id="tempMax"></td>
+                          <td id="tempMin"></td>
+                        </tr>
+                      </tbody>
+                </table>
+                <img src="./previsao-do-tempo-1024x590.jpg" alt="temperatura" width="500" height="300">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
