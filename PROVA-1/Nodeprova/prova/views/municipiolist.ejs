@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1 class="text-center title-1"> Lista de Municípios </h1>
+    <ul>
+	<% municipiolist.forEach(function(municipio){ %>
+		<li><p>Cidade: <%= municipio.cidade %> - Temperatura: <%= municipio.temp %></p></li>	
+	<%})%>
+    </ul>
+</body>
+</html>
