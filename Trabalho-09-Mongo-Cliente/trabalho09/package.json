@@ -1,0 +1,22 @@
+{
+    "name": "CrudNode",
+    "version": "1.0.0",
+    "main": "server.js",
+    "description": "crud básico em node",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "ejs": "^2.6.1",
+        "express": "^4.16.3",
+        "mongodb": "^3.1.7"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.4"
+    }
+}
